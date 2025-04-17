@@ -12,7 +12,7 @@ https.createServer(options, app).listen(443, () => {
 });
 
 app.get('/', (req, res) => {
-	res.send('Hello, NCP Rocky Linux!');
+	res.send('Hello, Nail!  ');
 });
 
 app.listen(3000, () => {
