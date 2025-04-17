@@ -12,7 +12,7 @@ https.createServer(options, app).listen(443, () => {
 });
 
 app.get('/', (req, res) => {
-	res.send('Hello, 1111new123Nail!  ');
+	res.send('Hello, Appmaster  ');
 });
 
 app.listen(3000, () => {
