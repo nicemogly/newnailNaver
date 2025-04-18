@@ -8,11 +8,11 @@ const options = {
 }
 
 //Router Setting
-const usersRouter = require('./routes/users');
+//const usersRouter = require('./routes/users');
 
 
 //Use Router Relations
-app.use('./users', usersRouter);
+//app.use('./users', usersRouter);
 
 
 
