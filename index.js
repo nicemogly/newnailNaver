@@ -7,6 +7,15 @@ const options = {
       key: fs.readFileSync('/etc/letsencrypt/live/appmaster.co.kr/privkey.pem'),    cert: fs.readFileSync('/etc/letsencrypt/live/appmaster.co.kr/fullchain.pem')
 }
 
+//Router Setting
+const usersRouter = require('./routes/users');
+
+
+//Use Router Relations
+app.use('./users', usersRouter);
+
+
+
 https.createServer(options, app).listen(443, () => {
 	 console.log('https Server running on port 443');
 });
